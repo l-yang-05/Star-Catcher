@@ -1,0 +1,27 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    border: 1px solid black;
+    height: 150px;
+}
+
+label {
+    display: inline;
+}
+
+.label-notes {
+    display: block;
+    margin: 20px 0px;
+}
+
+input[type=textarea].notes{
+    padding: 10px;
+    width: 85%;
+    margin: 0px auto 25px;
+    height: 150px;
+}

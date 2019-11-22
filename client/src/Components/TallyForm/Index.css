@@ -1,0 +1,59 @@
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+form input[type=text]{
+    margin: 10px 20px;
+    display: inline;
+    
+    padding: 12px 20px;
+    margin: 20px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+form input[type=textarea]{
+width: 90%;
+padding: 12px 20px;
+    margin: 20px 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+form label{
+    display: block;
+    margin: 10px 20px 0px 20px;
+}
+
+button[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+input {
+    border: black 2px solid;
+}
+
+.btn-primary{
+    width: 100% !important;
+    background-color: #00009C !important;
+    color: white !important;
+    font-size:60px;
+}
+ 
+.category-card{
+    margin-bottom: 5%;
+}
+
+.btn-primary a:hover{
+    background-color: white !important;
+    color:#00009C !important;
+}
+
+.flex-wrap{
+    display: flex;
+    flex-direction: column;
+}
