@@ -1,0 +1,262 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+.hidden{
+  display: none;
+}
+
+.filter-container{
+  display: flex;
+}
+
+.container-drop{
+  margin: 25px;
+}
+
+.row{
+  margin:0 !important;
+}
+.container-drop input {
+  border-radius: 20px;
+}
+
+.profile{
+  display: block;
+}
+.fab {
+  padding: 10px;
+}
+
+#who {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+#who .btn-who {
+  background-color: #843b62;
+  color: #fff;
+  width: 50%;
+}
+
+#who .btn-who:hover {
+  background-color: transparent;
+  border: 1px solid #798aeb;
+  color: #389fb9;
+}
+
+#ConLeft {
+  padding: 50px;
+
+  /* border: 1px solid blue; */
+}
+
+.form1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  padding: 30px;
+  /* border: 1px solid blue; */
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#sticky-footer {
+  padding: 2rem 0;
+  background-color: #74546a;
+  color: #ffb997;
+}
+
+#sticky-footer a {
+  color: #ffb997;
+}
+
+#sticky-footer .fa {
+  padding: 0 5px;
+}
+
+.navbar {
+  background-color: rgba(116, 84, 106, 0.9);
+  border-bottom: 1px solid #ffb997;
+  font-family: "Roboto Mono", monospace;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #0b032d;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: rgb(245, 134, 255);
+}
+
+.navbar-toggler-icon {
+  color: #0b032d;
+}
+
+.slide-container {
+  width: 70%;
+  margin: auto;
+}
+
+/* #contact {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+} */
+
+.card-body {
+  text-align: center;
+  /* height: 150px; */
+}
+.card-footer {
+  text-align: left;
+  font-size: x-large;
+}
+.card-title {
+  font-size: larger;
+}
+#foo {
+  color: #0b032d;
+  font-size: large;
+  border: 2px solid #74546a;
+  background-color: rgba(255, 185, 151, 0.438);
+}
+
+#btn {
+  border: blue;
+}
+
+.user {
+  padding: 50px;
+  border: blue;
+}
+
+.user1 {
+  /* background-color: #09d3ac; */
+  box-shadow: 5px 10px 10px;
+  background-image: url("http://www.pngmaster.com/images/4/transparent-pixel-star-backgrounds-i-moved-blogs-4573.png");
+}
+/* LOG IN PAGE */
+.contact-wrapper {
+  text-align: center;
+  /* padding: 200px; */
+  /* align-content: center; */
+  background-image: url("http://www.pngmaster.com/images/4/transparent-pixel-star-backgrounds-i-moved-blogs-4573.png");
+}
+
+/* body {
+  background-color: #f3ebf6;
+  font-family: "Ubuntu", sans-serif;
+} */
+
+.main {
+  background-color: #ffffff;
+  width: 400px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+
+}
+
+.sign {
+  padding-top: 40px;
+  color: #8c55aa;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.un {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+.pass {
+  width: 76%;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: rgba(136, 126, 126, 0.04);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.un:focus,
+.pass:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.submit {
+  cursor: pointer;
+  border-radius: 5em;
+  color: #fff;
+  background: linear-gradient(to right, #9c27b0, #e040fb);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #843B62;
+  padding-top: 15px;
+}
+
+.forgot:hover {
+  color: #0B032D;
+}
+
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #e1bee7;
+  text-decoration: none;
+}

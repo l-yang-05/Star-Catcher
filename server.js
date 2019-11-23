@@ -1,34 +1,35 @@
-require('dotenv').config(); //.env to keep variables private
-const express = require('express'); //node web framework
-const morgan = require('morgan'); //to check api endpoints
-const path = require('path');//node module which lets us access file system
+//import modules
+const express = require('express')
+const mongoose = require('mongoose');
+const morgan = require('morgan')
+require('dotenv').config()
+
 const app = express();
-const port = 5000;
+const port = 4000;
+app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
-app.use(express.urlencoded({ extended: true }));//url encoding parsing middleware
-app.use(express.json());//json parsing middleware
 
-app.use(morgan('dev'));//lets you test your endpoints in your console
+//create connection 
+mongoose.connect(process.env.URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+    useCreateIndex: true
+})
 
-//serves up static sites when in production environment
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-}
+//get default connection
+let db = mongoose.connection;
 
-//connects api routes
-const studentRoutes = require('./routes/studentRoutes');
-const runRoutes = require('./routes/runRoutes');
-const categoryRoutes = require('./routes/categoryRoutes');
-app.use('/category', categoryRoutes);
-app.use('/students', studentRoutes);
-app.use('/runs', runRoutes);
+//handles error and connections
+db.on('err', console.error.bind(console, 'connection error: '))
+db.once('open', () => console.log('connected to mongod database'))
 
-//sends files to the react app
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "./client/build/index.html"));
-});
+//requires routes
+const apiRoutes = require('./routes/apiRoutes.js')
+app.use('/api', apiRoutes)
 
-//console logs when server is up and running
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
-});
+app.listen(port, console.log(`Server listening on port:${port}`))
+
+module.exports = app;
