@@ -1,5 +1,5 @@
 # Star Catcher
-![screenshot]()
+![screenshot](https://github.com/l-yang-05/Star-Catcher/blob/master/screenshot.png)
 
 Star Catcher is a MERN-stack auction eCommerce platform for buying and auctioning off stars of different galaxies. I created this application with my team at HackNC 2019. This project includes a Home page with slider images; a Login and Sign Up page to authenticate users; a Products page that allows the user to filter and put bids on certain stars; and a Footer with social media links and contact form. We created APIs that are accessing the MongoDB Atlas database that has all of our documented stars. Star Catcher has responsive pages for various device types to accomadate differences in screen widths. 
 
